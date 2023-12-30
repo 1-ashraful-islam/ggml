@@ -417,6 +417,7 @@ inline static int32x4_t vdotq_s32(int32x4_t acc, int8x16_t a, int8x16_t b) {
 
     return vaddq_s32(acc, vaddq_s32(vpaddlq_s16(p0), vpaddlq_s16(p1)));
     #define VDOTQ_S32_DEFINED
+    #endif
 }
 
 #endif
